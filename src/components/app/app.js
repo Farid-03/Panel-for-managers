@@ -7,11 +7,6 @@ import EmployeesList from '../employers-list/employers-list';
 import EmployeesAddForm from '../employers-add-form/employers-add-form';
 
 import './app.css';
-/* 
-1.Bug duzeltemk filtrda (ulduz basanda gelmir default olaraq galir birincide)
-2.Maashi web sehifede duzeltmek olur meselen 800 den 1000e ama refresh edende ve ya componente galir 800 onu localStorage ve ya bashga neyise etmek fix etmek
-3.Renglerin deyishmek daha uygun
- */
 class App extends Component {
     constructor(props) {
         super(props);

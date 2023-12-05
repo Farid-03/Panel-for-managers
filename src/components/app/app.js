@@ -7,6 +7,7 @@ import EmployeesList from '../employers-list/employers-list';
 import EmployeesAddForm from '../employers-add-form/employers-add-form';
 
 import './app.css';
+
 class App extends Component {
     constructor(props) {
         super(props);
@@ -30,7 +31,7 @@ class App extends Component {
         })
     }
 
-    addItem = (name, salary) => {
+        addItem = (name, salary) => {
         const newItem = {
             name, 
             salary,
@@ -86,6 +87,8 @@ class App extends Component {
         this.setState({filter});
     }
 
+  
+
     render() {
         const {data, term, filter} = this.state;
         const employees = this.state.data.length;
@@ -104,7 +107,8 @@ class App extends Component {
                 <EmployeesList 
                     data={visibleData}
                     onDelete={this.deleteItem}
-                    onToggleProp={this.onToggleProp}/>
+                    onToggleProp={this.onToggleProp}
+                    />
                 <EmployeesAddForm onAdd={this.addItem}/>
             </div>
         );

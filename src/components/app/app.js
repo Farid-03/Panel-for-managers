@@ -1,5 +1,4 @@
 import { Component } from 'react';
-
 import AppInfo from '../app-info/app-info';
 import SearchPanel from '../search-panel/search-panel';
 import AppFilter from '../app-filter/app-filter';
@@ -13,9 +12,11 @@ class App extends Component {
         super(props);
         this.state = {
             data: [
-                {name: 'John C.', salary: 800, increase: false, rise: true, id: 1},
-                {name: 'Alex M.', salary: 3000, increase: true, rise: false, id: 2},
-                {name: 'Carl W.', salary: 5000, increase: false, rise: false, id: 3}
+                {name: 'Imran Asgarov', salary: 100, increase: false, rise: false, id: 1},
+                {name: 'Saleh Nasirov', salary: 400, increase: false, rise: false, id: 2},
+                {name: 'Ali Zeynalov', salary: 1200, increase: false, rise: false, id: 4},
+                {name: 'Elshad Eyvazov', salary: 1200, increase: false, rise: false, id: 5},
+                {name: 'Togrul Aliyev', salary: 3000, increase: false, rise: false, id: 6}
             ],
             term: '', 
             filter: 'all'
